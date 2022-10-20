@@ -4,12 +4,16 @@ struct ContentView: View {
     var body: some View {
         Spacer()
         VStack(alignment: .center){
-            HStack(alignment: .center){
+            HStack(alignment: .center, spacing: 90){
+                Text("JAA")
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 96, height: 96, alignment: .topLeading)
-        }
+                Text("Music")
+                    .foregroundColor(.white)
+                
+            }
             MenudeSeleccion()
             Spacer()
             Agregadas()
@@ -18,9 +22,10 @@ struct ContentView: View {
             Favoritas()
             Spacer()
             Reproductor()
-        }
+            Spacer()
+        }.padding(5)
     }
-
+    
     struct MenudeSeleccion: View {
         var body: some View {
             VStack(alignment: .center){
@@ -28,15 +33,15 @@ struct ContentView: View {
                     Button("Inicio"){}
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
-                
+                    
                     Button("Favoritos"){}
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
-                
+                    
                     Button("Albums"){}
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
-                
+                    
                     Button("Playlists"){}
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
@@ -108,7 +113,7 @@ struct ContentView: View {
             }
         }
     }
-
+    
     struct Favoritas: View {
         var body: some View {
             VStack(alignment: .leading){
@@ -146,7 +151,7 @@ struct ContentView: View {
                 Text("Agregadas Recientemente")
                 HStack{
                     Button(action: {}){
-                        Image("album12")
+                        Image("Album12")
                             .resizable()
                             .frame(width: 128, height: 128, alignment: .topLeading)
                             .scaledToFit()
