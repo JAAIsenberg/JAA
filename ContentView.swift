@@ -2,113 +2,198 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Botones1()
-            Text("AG")
-                .font(.custom("Arial", size: 44))
-                .frame(width:120, height:120)
-                .background(.gray)
-                .foregroundColor(.white)
-                .clipShape(Circle())
-            Text("Angel Gutiérrez")
-                .font(.custom("Arial", size: 30))
-            Opciones()
-            Contenido()
+        Spacer()
+        VStack(alignment: .center){
+            HStack(alignment: .center){
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 96, height: 96, alignment: .topLeading)
+        }
+            MenudeSeleccion()
             Spacer()
+            Agregadas()
+            Recientes()
+            Populares()
+            Favoritas()
+            Spacer()
+            Reproductor()
         }
     }
-}
 
-struct Botones1: View {
-    var body: some View {
-        HStack{
-            Image(systemName: "chevron.left")
-                .foregroundColor(.blue)
-            Button("Contactos"){}
-            Spacer()
-            Button("Editar"){}
-        }.padding(15)
+    struct MenudeSeleccion: View {
+        var body: some View {
+            VStack(alignment: .center){
+                HStack(spacing: 10){
+                    Button("Inicio"){}
+                        .buttonStyle(.bordered)
+                        .foregroundColor(.accentColor)
+                
+                    Button("Favoritos"){}
+                        .buttonStyle(.bordered)
+                        .foregroundColor(.accentColor)
+                
+                    Button("Albums"){}
+                        .buttonStyle(.bordered)
+                        .foregroundColor(.accentColor)
+                
+                    Button("Playlists"){}
+                        .buttonStyle(.bordered)
+                        .foregroundColor(.accentColor)
+                    Spacer()
+                }
+            }.padding(.leading, 30)
+        }
     }
-}
-
-struct Opciones: View {
-    var body: some View {
-        HStack(spacing: 40){
-            Button(action: {}){
-                VStack{
-                    Image(systemName: "message.circle.fill")
-                        .resizable()
-                        .imageScale(.large)
-                        .frame(width:40, height:40)
-                    Text("Mensaje")
-                        .font(.caption)
-                }
-            }
-            Button(action: {}){
-                VStack{
-                    Image(systemName: "phone.circle.fill")
-                        .resizable()
-                        .imageScale(.large)
-                        .frame(width:40, height:40)
-                    Text("Llamar")
-                        .font(.caption)
-                }
-            }
-            Button(action: {}){
-                VStack{
-                    Image(systemName: "video.circle")
-                        .resizable()
-                        .foregroundColor(.gray)
-                        .imageScale(.large)
-                        .frame(width:40, height:40)
-                    Text("Video")
-                        .foregroundColor(.gray)
-                        .font(.caption)
-                }
-            }
-            Button(action: {}){
-                VStack{
-                    Image(systemName: "envelope.circle")
-                        .resizable()
-                        .foregroundColor(.gray)
-                        .imageScale(.large)
-                        .frame(width:40, height:40)
-                    Text("Email")
-                        .foregroundColor(.gray)
-                        .font(.caption)
-                }
-            }
-        }.padding(10)
-    }
-}
-
-struct Contenido: View {
-    var body: some View {
-        VStack(alignment: .leading){
+    
+    struct Recientes: View {
+        var body: some View {
             VStack(alignment: .leading){
-                Text("Casa")
-                Text("818 389 4589")
-                    .foregroundColor(.blue)
-            }.padding(20)
-            
-            VStack{
-                Text("Notas")
-                    .foregroundColor(.gray)
-            }.padding(20)
-            
-            VStack{
-                Text("Enviar mensaje")
-                    .foregroundColor(.blue)
-            }.padding(20)
-            
-            VStack{
-                Text("Compartir contacto")
-                    .foregroundColor(.blue)
-            }.padding(20)
-            
-        }.frame(maxWidth: .infinity,
-                idealHeight: 50, 
-                maxHeight: 70, 
-                alignment:.topLeading)
+                Text("Escuchadas Recientemente")
+                HStack{
+                    Button(action: {}){
+                        Image("album01")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album02")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album03")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    struct Populares: View {
+        var body: some View {
+            VStack(alignment: .leading){
+                Text("Populares")
+                HStack{
+                    Button(action: {}){
+                        Image("album06")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album07")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album08")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                }
+            }
+        }
+    }
+
+    struct Favoritas: View {
+        var body: some View {
+            VStack(alignment: .leading){
+                Text("Favoritas")
+                HStack{
+                    Button(action: {}){
+                        Image("album05")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album09")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album11")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                }
+            }
+        }
+    }
+    
+    struct Agregadas: View {
+        var body: some View {
+            VStack(alignment: .leading){
+                Text("Agregadas Recientemente")
+                HStack{
+                    Button(action: {}){
+                        Image("album12")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album10")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    Button(action: {}){
+                        Image("album04")
+                            .resizable()
+                            .frame(width: 128, height: 128, alignment: .topLeading)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                }
+            }
+        }
+    }
+    
+    struct Reproductor: View {
+        var body: some View {
+            VStack(alignment: .center) {
+                HStack(alignment: .bottom){
+                    Button(action: {}){
+                        Image(systemName: "shuffle")
+                    }
+                    Spacer()
+                    Button(action: {}){
+                        Image(systemName: "backward.end.alt")
+                    }
+                    Button(action: {}){
+                        Image(systemName: "play")
+                    }
+                    Button(action: {}){
+                        Image(systemName: "forward.end.alt")
+                    }
+                    Spacer()
+                    Button(action: {}){
+                        Image(systemName: "repeat")
+                    }
+                }
+            }
+        }
     }
 }
