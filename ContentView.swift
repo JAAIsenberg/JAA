@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct ContentView: View {
@@ -6,13 +7,16 @@ struct ContentView: View {
         VStack(alignment: .center){
             HStack(alignment: .center, spacing: 90){
                 Text("JAA")
+                    .foregroundColor(.white)
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 96, height: 96, alignment: .topLeading)
-                Text("Music")
-                    .foregroundColor(.white)
-                
+                Button(action: {}){
+                    Image(systemName: "gear")
+                }
+                .buttonStyle(.bordered)
+                .foregroundColor(.accentColor)
             }
             MenudeSeleccion()
             Spacer()
@@ -30,7 +34,7 @@ struct ContentView: View {
         var body: some View {
             VStack(alignment: .center){
                 HStack(spacing: 10){
-                    Button("Inicio"){}
+                    Button("Inicio"){
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
                     
@@ -46,9 +50,13 @@ struct ContentView: View {
                         .buttonStyle(.bordered)
                         .foregroundColor(.accentColor)
                     Spacer()
+                    
+                    if showDetails {
+                        Favoritos()
                 }
             }.padding(.leading, 30)
         }
+    }
     }
     
     struct Recientes: View {
@@ -173,32 +181,43 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        } 
     }
     
-    struct Reproductor: View {
-        var body: some View {
-            VStack(alignment: .center) {
-                HStack(alignment: .bottom){
-                    Button(action: {}){
-                        Image(systemName: "shuffle")
-                    }
-                    Spacer()
-                    Button(action: {}){
-                        Image(systemName: "backward.end.alt")
-                    }
-                    Button(action: {}){
-                        Image(systemName: "play")
-                    }
-                    Button(action: {}){
-                        Image(systemName: "forward.end.alt")
-                    }
-                    Spacer()
-                    Button(action: {}){
-                        Image(systemName: "repeat")
-                    }
+    
+    
+        struct Reproductor: View {
+            @State private var playpause = false
+            var body: some View {
+                VStack(alignment: .center) {
+                    HStack(alignment: .bottom){
+                        Button(action: {}){
+                            Image(systemName: "shuffle")  
+                        }
+                        Spacer()
+                        Button(action: {}){
+                            Image(systemName: "backward.end.alt")
+                        }
+                        Button(){
+                            Image(systemName: "play")
+                            playpause.toggle()
+                            } 
+                            
+                            if playpause {
+                                Image(systemName: "pause")
+                            }
+                            
+                        Button(action: {}){
+                            Image(systemName: "forward.end.alt")
+                        }
+                        Spacer()
+                        Button(action: {}){
+                            Image(systemName: "repeat")
+                        }
+                            
+                        }
+                    }  
                 }
             }
         }
     }
-}
