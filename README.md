@@ -14,12 +14,12 @@ Es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y de 
 - Esta hecho con el lenguaje de Swift, el cuál es bastante practico de usar.
 ### En proceso...
 - [ ] Escuchar musica sin conexión.
-- [ ] Soporte para Subsonic/Airsonic.
-- [ ] Soporte para Jellyfin.
+- [ ] Soporte para [Subsonic](http://www.subsonic.org/pages/index.jsp)/[Airsonic](https://airsonic.github.io/).
+- [ ] Soporte para [Jellyfin](https://jellyfin.org/).
 - [ ] Mejorar la interfaz.
 - [ ] Agregar soporte para audifonos inalambricos (Airpods, etc).
 - [ ] Ecualizador.
 - [ ] Soporte para Playlists.
-- [ ] Mejorar la identificación de metadatos.
+- [ ] Mejorar la identificación de [metadatos](https://es.wikipedia.org/wiki/Metadatos)
 ## Dificultades en el Proceso
-A la hora de comenzar a programar, tuvimos varios problemas con el orden, lo cual dificulto y nos molesto mucho durante una gran parte del proceso, pero ahora, con este [repositorio de codigo](https://github.com/JAAIsenberg/JAA), el trabajo se nos ha facilitado y hemos tenido más fluidez en nuestra productividad. Otro problema que tuvimos, fue la falta de equipo MAC en nuestro equipo, lo cuál se resolvio al crear una maquina virtual que tuviera el sistema operativo de MacOS. Hubo varias dificultades a la hora de investigar ciertas funciones, como implementar la reproducción de musica, guardar las configuraciones del usuario y la realización de cambios de la interfaz.
+A la hora de comenzar a programar, nos presentamos con varios problemas en el orden, lo cual dificulto mucho una gran parte del proceso, pero ahora, con este [repositorio de codigo](https://github.com/JAAIsenberg/JAA), el trabajo se ha facilitado y hemos sido capaces de tener más fluidez en la productividad. Otro problema con el que afrontamos a la hora de trabajar, fue la falta de equipo MAC en nuestro equipo, lo cuál se resolvio al crear una maquina virtual que tuviera el sistema operativo de MacOS. Hubo varias dificultades a la hora de investigar ciertas funciones, como implementar la reproducción de musica, guardar las configuraciones del usuario y la realización de cambios de la interfaz.
