@@ -46,8 +46,9 @@ En la parte inferior hay un mini reproductor él con botones le da al usuario la
 
 A la hora de comenzar a programar, nos presentamos con varios problemas en el orden, lo cual dificulto mucho una gran parte del proceso, pero ahora, con este [repositorio de codigo](https://github.com/JAAIsenberg/JAA), el trabajo se ha facilitado y hemos sido capaces de tener más fluidez en la productividad. Otro problema con el que afrontamos a la hora de trabajar, fue la falta de equipo MAC en nuestro equipo, lo cuál se resolvio al crear una maquina virtual que tuviera el sistema operativo de MacOS. Hubo varias dificultades a la hora de investigar ciertas funciones, como implementar la reproducción de musica, guardar las configuraciones del usuario y la realización de cambios de la interfaz.
 
-## Creditos
+## Material de Apoyo
 
-- Stack Overflow
-- Apple Developer Wiki
-- Swift Developer Wiki
+- [Stack Overflow](https://stackoverflow.com/)
+- [Apple Developer Wiki](https://developer.apple.com/swift-playgrounds/)
+- [Apple Developer Forums](https://developer.apple.com/forums/)
+- [Swift Developer Wiki](https://docs.swift.org/swift-book/)
