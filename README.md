@@ -2,7 +2,7 @@
 ![logo](logo.png)
 
 
-Es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y de codigo abierto.
+JAA es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y de codigo abierto.
 ## Equipo de Trabajo
 - [Alejandro Molina Escobedo](https://github.com/amolinae06)
 - [Juan Pablo Gutiérrez Valdez](https://github.com/Guti24)
