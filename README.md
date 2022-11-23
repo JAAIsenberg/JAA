@@ -13,13 +13,13 @@ JAA es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y
 
 ## Aplicacion
 
-La aplicacion por defecto muestra el menu principal, esto puede cambiar en el futuro. En la cual se muestra albumes sugeridos por el reproductor, hay botones que le dan la opciones al usuario de elegir y navegar por la interfaz como se ve en la siguiente imagen ademas, hay soporte para color de acento del usuario.
+La aplicación por defecto muestra el menú principal, esto puede cambiar en el futuro. En la cual se muestran álbumes sugeridos por el reproductor, hay botones que le dan la opciones al usuario de elegir y navegar por la interfaz como se ve en la siguiente imagen además, hay soporte para color de acento del usuario.
 
-En la parte superior se utilizaron VStacks y HStacks para poder crear una linea vertical y horizontal con los botones de inicio.
+En la parte superior se utilizaron VStacks y HStacks para poder crear una línea vertical y horizontal con los botones de inicio.
 
-Los albumes utilizan un VStack, HStack y Scrollview para poder lograr el efecto de deslize en los albumes.
+Los álbumes utilizan un VStack, HStack y Scrollview para poder lograr el efecto de desliza en los álbumes.
 
-En la parte inferior hay un mini reproductor el con botones le da al usuario la libertad de cambiar, pausar, repetir y elegir un orden aleatorio. Se utiliza un VStack y HStack para lograr el efecto de acomodo.
+En la parte inferior hay un mini reproductor él con botones le da al usuario la libertad de cambiar, pausar, repetir y elegir un orden aleatorio. Se utiliza un VStack y HStack para lograr el efecto de acomodo.
 
 ## Funciones
 
