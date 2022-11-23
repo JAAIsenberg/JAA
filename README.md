@@ -27,7 +27,7 @@ En la parte inferior hay un mini reproductor el con botones le da al usuario la 
 - Tiene un interfaz bastante sencilla y accesible.
 - Esta hecho con el lenguaje de Swift, el cuál es bastante practico de usar para el usuario final y el desarrollador.
 
-### Muy Pronto
+### TODO
 
 - [ ] Escuchar musica sin conexión.
 - [ ] Plataformas [Android](https://es.wikipedia.org/wiki/Android), [Windows](https://es.wikipedia.org/wiki/Microsoft_Windows) y [GNU/Linux](https://es.wikipedia.org/wiki/GNU/Linux).
