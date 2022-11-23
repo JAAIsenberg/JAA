@@ -26,7 +26,6 @@ En la parte inferior hay un mini reproductor el con botones le da al usuario la 
 - Nuestra aplicación es capaz de reproducir música.
 - Tiene un interfaz bastante sencilla y accesible.
 - Esta hecho con el lenguaje de Swift, el cuál es bastante practico de usar para el usuario final y el desarrollador.
-- The funny.
 
 ### Muy Pronto
 
