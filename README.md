@@ -13,18 +13,23 @@ JAA es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y
 
 ## Aplicacion
 
-La aplicacion por defecto muestra el menu principal, esto puede cambiar en el futuro. En la cual se muestra albumes sugeridos por el reproductor, hay botones que le dan la opciones al usuario de elegir y navegar por la interfaz como se ve en la siguiente imagen.
+La aplicacion por defecto muestra el menu principal, esto puede cambiar en el futuro. En la cual se muestra albumes sugeridos por el reproductor, hay botones que le dan la opciones al usuario de elegir y navegar por la interfaz como se ve en la siguiente imagen ademas, hay soporte para .
+
+En la parte superior se utilizaron VStacks y HStacks para poder crear una linea vertical y horizontal con los botones de inicio. 
+
+Los albumes utilizan un VStacky HStack y un Scrollview para poder lograr el efecto de cambios en los albumes. 
 
 ## Funciones
 
 - Nuestra aplicación es capaz de reproducir música.
 - Tiene un interfaz bastante sencilla y accesible.
 - Esta hecho con el lenguaje de Swift, el cuál es bastante practico de usar para el usuario final y el desarrollador.
-- T
+- The funny.
 
 ### Muy Pronto
 
 - [ ] Escuchar musica sin conexión.
+- [ ] Material
 - [ ] Plataformas [Android](https://es.wikipedia.org/wiki/Android), [Windows](https://es.wikipedia.org/wiki/Microsoft_Windows) y [GNU/Linux](https://es.wikipedia.org/wiki/GNU/Linux).
 - [ ] Soporte para [Subsonic](http://www.subsonic.org/pages/index.jsp)/[Airsonic](https://airsonic.github.io/).
 - [ ] Soporte para [Jellyfin](https://jellyfin.org/).
