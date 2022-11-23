@@ -2,11 +2,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        NavigationView {
         HStack {
             VStack{
-                Inicio()
-            }
-        }
-        .background(.black)
+               Inicio()
+               } .offset(y: -60)
+            } .background(.black)
+        }
     }
-}
+} 
