@@ -1,6 +1,6 @@
 # JAA MUSIC
 
-![logo](newlogo.png)
+![logo](https://github.com/JAAIsenberg/JAA/blob/main/newlogo.png)
 
 JAA es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y de codigo abierto.
 
@@ -15,7 +15,7 @@ JAA es un reproductor de musica, hecho en Swift. Es de facil uso, sin anuncios y
 
 La aplicación por defecto muestra el menú principal, esto puede cambiar en el futuro. En la cual se muestran álbumes sugeridos por el reproductor, hay botones que le dan la opciones al usuario de elegir y navegar por la interfaz como se ve en la siguiente imagen además, hay soporte para color de acento del usuario.
 
-![app](app.png)
+![app](https://github.com/JAAIsenberg/JAA/blob/main/app.png)
 
 En la parte superior se utilizaron VStacks y HStacks para poder crear una línea vertical y horizontal con los botones de inicio.
 
